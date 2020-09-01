@@ -2,9 +2,12 @@
 
 ## Service which will same Asset objects to recommendation engine
 
-- [ ] Setup Elatistsearch
+- [x] Setup Elatistsearch
+- [x] Import dummy data 
+  - [x] `curl -H 'Content-Type: application/x-ndjson' -XPOST 'localhost:9200/assets/_bulk?' --data-binary @esBulk.data`
 - [ ] Setup API to store object to elastic index
 - [ ] Setup API to retrive similar objects
+  - https://www.elastic.co/guide/en/elasticsearch/guide/current/_significant_terms_demo.html
 
 ## Backend service to list Asset objects
 
