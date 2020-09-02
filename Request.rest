@@ -1,0 +1,15 @@
+# Get list of assets
+GET http://localhost:3000/assets/
+
+# Create asset 
+POST http://localhost:3000/assets/
+
+# Update asset 
+PUT http://localhost:3000/assets/:id
+
+# Delete Asset
+DELETE http://localhost:3000/assets/:id
+
+
+# Get list of similar asset to provided
+GET http://localhost:3000/assets/1/similar

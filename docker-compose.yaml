@@ -22,6 +22,12 @@ services:
             - 5601:5601
         networks:
             - recommender
+    db1:
+        image: mongo
+        ports:
+            - 27017:27017
+        networks:
+            - recommender
 networks:
     recommender:
 volumes:
