@@ -26,8 +26,10 @@
     "awilix": "^4.2.6",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
+    "elasticsearch": "^16.7.1",
     "express": "^4.17.1",
     "glob-promise": "^3.4.0",
+    "lodash": "^4.17.20",
     "mongoose": "^5.10.2",
     "morgan": "^1.10.0"
   }

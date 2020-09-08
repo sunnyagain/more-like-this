@@ -1,13 +1,12 @@
-import path from "path"
-import glob from "glob-promise"
+import path from 'path'
+import glob from 'glob-promise'
 import {
     createContainer,
     listModules,
     asClass,
-    asFunction,
-    asValue
-} from "awilix"
-import { create } from "domain";
+    asValue,
+    asFunction
+} from 'awilix'
 
 class Bootstrap {
 
@@ -20,9 +19,6 @@ class Bootstrap {
         await this.registerControllers()
         const app = this._container.resolve('ExpressService')
         app.start()
-        const DBService = this._container.resolve('DatabaseService')
-        const dbClient = DBService.init()
-        this._container.register('DB', asValue(dbClient))
     }
 
     async registerServices() {

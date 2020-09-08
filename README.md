@@ -6,15 +6,15 @@
 - [x] Import dummy data 
   - [x] `curl -H 'Content-Type: application/x-ndjson' -XPOST 'localhost:9200/assets/_bulk?' --data-binary @esBulk.data`
 - [ ] Setup API to store object to elastic index
-- [ ] Setup API to retrive similar objects
+- [x] Setup API to retrive similar objects
   - https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html
 
 ## Backend service to list Asset objects
 
-- [ ] Setup Express Service to expose Mongo Asset Objects
+- [x] Setup Express Service to expose Mongo Asset Objects
 - [ ] Setup API to expose Above service
   - [ ] POST
-  - [ ] GET
+  - [x] GET
   - [ ] PUT
   - [ ] DELETE
 

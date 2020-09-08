@@ -1,7 +1,7 @@
 version: "3.7"
 services:
     elasticsearch:
-        image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.9.0
+        image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.6.0
         container_name: elasticsearch1
         environment:
             - discovery.type=single-node
@@ -11,13 +11,13 @@ services:
             - 9200:9200
             - 9300:9300
         volumes:
-            - elasticdata:/usr/share/elasticsearch/data
+            - elasticdata1:/usr/share/elasticsearch/data
         networks:
             - recommender
     kibana:
         depends_on:
             - elasticsearch
-        image: docker.elastic.co/kibana/kibana-oss:7.9.0
+        image: docker.elastic.co/kibana/kibana-oss:7.6.0
         ports:
             - 5601:5601
         networks:
@@ -31,5 +31,5 @@ services:
 networks:
     recommender:
 volumes:
-    elasticdata:
+    elasticdata1:
         driver: local
